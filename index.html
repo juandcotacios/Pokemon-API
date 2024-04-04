@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css" />
+    
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="input-group input-group-lg">
+                <span class="input-group-text" id="inputGroup-sizing-lg">Pokémon Wiki</span>
+                <input type="text" id="txt-buscar" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-lg">
+            </div>
+            <div class="row_pokemon_name">
+                <button type="button" id="name_pokemon" class="btn btn-success">Name</button>
+            </div>
+            <div class="row_pokemon">
+                <div id="imagen_pokemon"></div>
+            </div>
+            <div class="row_pokemonshiny">
+                <div id="imagen_pokemon_shiny"></div>
+            </div>
+            <div class="row_pokemon_type">
+                <button type="button" id="type_pokemon" class="btn btn-secondary">Base Experience</button>
+            </div>
+            <div class="row_pokemon_weight">
+                <button type="button" id="weight_pokemon" class="btn btn-dark">Weight</button>
+            </div>
+            <div class="row_pokemon_height">
+                <button type="button" id="height_pokemon" class="btn btn-dark">Height</button>
+            </div>
+            <div class="row_pokemon_id">
+                <button type="button" id="id_pokemon" class="btn btn-info">#ID</button>
+            </div>
+            <div class="row_pokemon_types">
+                <button type="button" id="types_pokemon" class="btn btn-primary">Types</button>
+            </div>
+            <div class="row_pokemon_types2">
+                <button type="button" id="types2_pokemon"class="btn btn-primary">Types</button>
+            </div>
+            <div class="row_pokemon_abilities">
+                <button type="button"id="pokemon_abilities" class="btn btn-warning">Abilities</button>
+            </div>
+            <div class="row_pokemon_abilities2">
+                <button type="button"id="pokemon_abilities2" class="btn btn-warning">Abilities</button>
+            </div>
+            <div class="row_pokemon_abilities3">
+                <button type="button"id="pokemon_abilities3"class="btn btn-warning">Abilities</button>
+            </div>
+            <div class="row_pokemon_statsHP">
+                <button type="button" id="statsHP_pokemon" class="btn btn-danger">HP</button>
+            </div>
+            <div class="row_pokemon_statsAttack">
+                <button type="button" id="statsAttack_pokemon" class="btn btn-danger">Attack</button>
+            </div>
+            <div class="row_pokemon_statDefense">
+                <button type="button" id="statsDefense_pokemon" class="btn btn-danger">Defense</button>
+            </div>
+            <div class="row_pokemon_statsSpecial-Attack">
+                <button type="button"id="statsSpecial-Attack_pokemon" class="btn btn-danger">Special Attack</button>
+            </div>
+            <div class="row_pokemon_statSpecialDefense">
+                <button type="button"id="statsSpecial-defense_pokemon" class="btn btn-danger">Special Defense</button>
+            </div>
+            <div class="row_pokemon_statsSpeed">
+                <button type="button" id="statsSpeed_pokemon" class="btn btn-danger">Speed</button>
+            </div>
+            
+        </div>
+        <button type="button" id="my-button"class="btn btn-outline-warning">Search</button>
+        <button type="button"  id="activar"  class="btn btn-outline-light">Activated Artyon Voice</button>
+        <script src="js/artyom.window.js"></script> 
+        <script src="js/main.js"></script> 
+       
+    </div>   
+     <div class="img_error">  
+        <img src="../API/sources/Error 404.gif"  id="img_error404"  class="img-fluid" alt="ERROR 404">
+        <img src="../API/sources/404 txt.png"  id="imgtxt_error404"  class="img-fluid2" alt="ERROR 404">
+        </div> 
+     </div>
+</body>
+
+</html>

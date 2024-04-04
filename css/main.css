@@ -1,0 +1,199 @@
+body {
+   background-image: url('../sources/background.jpg');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-attachment: fixed;
+   background-size: cover;
+}
+
+.btn-outline-warning{
+   margin-left: 103%;
+   margin-top: 3%;
+   font-family: 'Courier New', Courier, monospace;
+   color: white !important;
+}
+
+.row_pokemon {
+   margin-left: 35%;
+   margin-top: 1%;
+}
+
+.row_pokemonshiny {
+   margin-left: 35%;
+   margin-top: 1%;
+
+}
+
+.input-group-text {
+   background-color: yellow;
+}
+
+.form-control {
+
+   background-color: skyblue;
+}
+
+.row_pokemon_name{
+   margin-left: -30%;
+   margin-top: 10%;
+   font-family: 'Courier New', Courier, monospace;
+   color: rgb(255, 255, 255);
+   position: absolute;
+ 
+}
+.row_pokemon_type {
+   margin-left: -12%;
+   margin-top: 15%;
+   font-size: 50px;
+   font-family: 'Courier New', Courier, monospace;
+   color: white;
+   position: absolute;
+}
+
+.row_pokemon_weight {
+   margin-left: -30%;
+   margin-top: 15%;
+   font-size: 50px;
+   font-family: 'Courier New', Courier, monospace;
+   color: rgb(255, 255, 255);
+   position: absolute;
+
+}
+
+.row_pokemon_id {
+   margin-left: 6%;
+   margin-top: 12%;
+   font-size: 50px;
+   font-family: 'Courier New', Courier, monospace;
+   color: rgb(255, 255, 255);
+   position: absolute;
+}
+
+.row_pokemon_types {
+   margin-left: -6%;
+   margin-top: 12%;
+   font-size: 50px;
+   font-family: 'Courier New', Courier, monospace;
+   color: rgb(255, 255, 255);
+   position: absolute;
+
+}
+
+.row_pokemon_types2 {
+   margin-left: 1%;
+   margin-top: 12%;
+   font-size: 50px;
+   font-family: 'Courier New', Courier, monospace;
+   color: rgb(255, 255, 255);
+   position: absolute;
+
+}
+.btn-warning{
+   color: white;
+}
+.row_pokemon_abilities {
+   margin-left: -30%;
+   margin-top: 12%;
+   font-size: 50px;
+   font-family: 'Courier New', Courier, monospace;
+   position: absolute;
+}
+
+.row_pokemon_abilities2 {
+   margin-left: -19%;
+   margin-top: 12%;
+   font-size: 50px;
+   font-family: 'Courier New', Courier, monospace;
+   color: rgb(255, 255, 255);
+   position: absolute;
+}
+
+.row_pokemon_abilities3 {
+   margin-left: -12%;
+   margin-top: 12%;
+   font-size: 50px;
+   font-family: 'Courier New', Courier, monospace;
+   color: rgb(255, 255, 255);
+   position: absolute;
+}
+.row_pokemon_height{
+   margin-left: -21%;
+   margin-top: 15%;
+   font-size: 50px;
+   font-family: 'Courier New', Courier, monospace;
+   color: rgb(255, 255, 255);
+   position: absolute;
+}
+
+.row_pokemon_statsHP{
+   margin-left: -23%;
+   margin-top: 9.5%;
+   font-size: 50px;
+   font-family: 'Courier New', Courier, monospace;
+   color: rgb(255, 255, 255);
+   position: absolute;
+}
+
+.row_pokemon_statsAttack{
+   margin-left: -17%;
+   margin-top: 9.5%;
+   font-size: 50px;
+   font-family: 'Courier New', Courier, monospace;
+   color: rgb(255, 255, 255);
+   position: absolute;
+}
+
+.row_pokemon_statDefense{
+   margin-left: -12%;
+   margin-top: 9.5%;
+   font-size: 50px;
+   font-family: 'Courier New', Courier, monospace;
+   color: rgb(255, 255, 255);
+   position: absolute;
+}
+
+.row_pokemon_statsSpecial-Attack{
+   margin-left: -2%;
+   margin-top: 9.5%;
+   font-size: 50px;
+   font-family: 'Courier New', Courier, monospace;
+   color: rgb(255, 255, 255);
+   position: absolute;
+}
+
+.row_pokemon_statSpecialDefense{
+   margin-left: 6%;
+   margin-top: 9.5%;
+   font-size: 50px;
+   font-family: 'Courier New', Courier, monospace;
+   color: rgb(255, 246, 246);
+   position: absolute;
+}
+
+.row_pokemon_statsSpeed{
+   margin-left: -7%;
+   margin-top: 9.5%;
+   font-size: 50px;
+   font-family: 'Courier New', Courier, monospace;
+   color: rgb(255, 251, 251);
+   position: absolute;
+}
+
+.img-fluid{
+   margin-left: 38%;
+   margin-top: -10%;
+   display: none;
+}
+
+.img-fluid2{
+   margin-left: -26%;
+   margin-top: 20%;
+   display: none;
+}
+
+.btn-outline-light{
+   margin-left: 111%;
+   margin-top: -6.5%;
+}
+
+

@@ -1,199 +1,475 @@
-body {
-   background-image: url('../sources/background.jpg');
-   background-repeat: no-repeat;
-   background-position: center center;
-   background-attachment: fixed;
-   background-size: cover;
+*{
+	margin:0;
+	padding: 0;
 }
 
-.btn-outline-warning{
-   margin-left: 103%;
-   margin-top: 3%;
-   font-family: 'Courier New', Courier, monospace;
-   color: white !important;
-}
-
-.row_pokemon {
-   margin-left: 35%;
-   margin-top: 1%;
-}
-
-.row_pokemonshiny {
-   margin-left: 35%;
-   margin-top: 1%;
+body{
+	display: grid;
+	grid-template-rows: 100px 1fr 40px;
+	height: 100vh;
 
 }
 
-.input-group-text {
-   background-color: yellow;
+.bgpractica{
+	background-image: url(../sources/Escenario.jpg);
+    background-size: 100%;
+    background-position-y: -111px;
 }
 
-.form-control {
-
-   background-color: skyblue;
+div.container{
+	margin-left: 33%;
+	margin-right: 10%;
+    margin-top: 20%;
 }
 
-.row_pokemon_name{
-   margin-left: -30%;
-   margin-top: 10%;
-   font-family: 'Courier New', Courier, monospace;
-   color: rgb(255, 255, 255);
-   position: absolute;
- 
-}
-.row_pokemon_type {
-   margin-left: -12%;
-   margin-top: 15%;
-   font-size: 50px;
-   font-family: 'Courier New', Courier, monospace;
-   color: white;
-   position: absolute;
+.juego{
+	height: 100%;
 }
 
-.row_pokemon_weight {
-   margin-left: -30%;
-   margin-top: 15%;
-   font-size: 50px;
-   font-family: 'Courier New', Courier, monospace;
-   color: rgb(255, 255, 255);
-   position: absolute;
+.juego .juego-guitar{
+	position: relative;
+	width: 59%;
+	height: 100%;
 
 }
 
-.row_pokemon_id {
-   margin-left: 6%;
-   margin-top: 12%;
-   font-size: 50px;
-   font-family: 'Courier New', Courier, monospace;
-   color: rgb(255, 255, 255);
-   position: absolute;
+div.juego div{
+	display: inline-block;
 }
 
-.row_pokemon_types {
-   margin-left: -6%;
-   margin-top: 12%;
-   font-size: 50px;
-   font-family: 'Courier New', Courier, monospace;
-   color: rgb(255, 255, 255);
-   position: absolute;
-
+.juego-guitar>div{
+	display: block !important;
 }
 
-.row_pokemon_types2 {
-   margin-left: 1%;
-   margin-top: 12%;
-   font-size: 50px;
-   font-family: 'Courier New', Courier, monospace;
-   color: rgb(255, 255, 255);
-   position: absolute;
 
-}
-.btn-warning{
-   color: white;
-}
-.row_pokemon_abilities {
-   margin-left: -30%;
-   margin-top: 12%;
-   font-size: 50px;
-   font-family: 'Courier New', Courier, monospace;
-   position: absolute;
+.hidden{
+	display: none !important;
 }
 
-.row_pokemon_abilities2 {
-   margin-left: -19%;
-   margin-top: 12%;
-   font-size: 50px;
-   font-family: 'Courier New', Courier, monospace;
-   color: rgb(255, 255, 255);
-   position: absolute;
+
+
+
+
+.carril{
+	width: 100px;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
 }
 
-.row_pokemon_abilities3 {
-   margin-left: -12%;
-   margin-top: 12%;
-   font-size: 50px;
-   font-family: 'Courier New', Courier, monospace;
-   color: rgb(255, 255, 255);
-   position: absolute;
-}
-.row_pokemon_height{
-   margin-left: -21%;
-   margin-top: 15%;
-   font-size: 50px;
-   font-family: 'Courier New', Courier, monospace;
-   color: rgb(255, 255, 255);
-   position: absolute;
+
+.juego-mastil{
+    max-width: 314px;
+    min-width: 313px;
+	height: 559px;
+    perspective: 324px;
+    width: 43%;
+	margin-left: 204px;
+	z-index: 1;
 }
 
-.row_pokemon_statsHP{
-   margin-left: -23%;
-   margin-top: 9.5%;
-   font-size: 50px;
-   font-family: 'Courier New', Courier, monospace;
-   color: rgb(255, 255, 255);
-   position: absolute;
+.matil-edges{
+	width: 100%;
+    height: 100%;
+    position: absolute;
+	background-image: url('../sources/side_bars.png');
+    background-size: 315px;
 }
 
-.row_pokemon_statsAttack{
-   margin-left: -17%;
-   margin-top: 9.5%;
-   font-size: 50px;
-   font-family: 'Courier New', Courier, monospace;
-   color: rgb(255, 255, 255);
-   position: absolute;
+.juego-mastil>div.texture{
+	transform: rotateX(40deg);  
+    background-image: url('../sources/GH3_PC-Axel.png');
+    background-size: 315px 504px;
+    border:1px solid black;
+	width: 100%;
+    height: 90%;
+    position: absolute;
 }
 
-.row_pokemon_statDefense{
-   margin-left: -12%;
-   margin-top: 9.5%;
-   font-size: 50px;
-   font-family: 'Courier New', Courier, monospace;
-   color: rgb(255, 255, 255);
-   position: absolute;
+
+div.texture.animated{
+    animation-name: neck;
+	animation-duration: var(--base-game-tempo-song);
+	animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
-.row_pokemon_statsSpecial-Attack{
-   margin-left: -2%;
-   margin-top: 9.5%;
-   font-size: 50px;
-   font-family: 'Courier New', Courier, monospace;
-   color: rgb(255, 255, 255);
-   position: absolute;
+
+.hit-buttom-space{
+	position: relative;
+	top: 85%;
+	width: 100%;
 }
 
-.row_pokemon_statSpecialDefense{
-   margin-left: 6%;
-   margin-top: 9.5%;
-   font-size: 50px;
-   font-family: 'Courier New', Courier, monospace;
-   color: rgb(255, 246, 246);
-   position: absolute;
+.hitter{
+	width: 18%;
+	background-image: url("../sources/fretbuttons.png");
+	background-size: 280px;
+	margin-left: 3px;
+	height: 33px;
 }
 
-.row_pokemon_statsSpeed{
-   margin-left: -7%;
-   margin-top: 9.5%;
-   font-size: 50px;
-   font-family: 'Courier New', Courier, monospace;
-   color: rgb(255, 251, 251);
-   position: absolute;
+.liners-mastil{
+	position: absolute;
+	width: 100%;
+    height: 88%;
+	background-image: url("../sources/center_lines.png");
+	background-size: 316px;
 }
 
-.img-fluid{
-   margin-left: 38%;
-   margin-top: -10%;
-   display: none;
+.hitter.hit-button-green{
+	background-position-x: 0px;
+	background-position-y: 0px;
 }
 
-.img-fluid2{
-   margin-left: -26%;
-   margin-top: 20%;
-   display: none;
+.hitter.hit-button-green.hit{
+	background-position-x: 0px;
+	background-position-y: -34px;
 }
 
-.btn-outline-light{
-   margin-left: 111%;
-   margin-top: -6.5%;
+.hitter.hit-button-green.hitted{
+	background-position-x: 0px;
+	background-position-y: -68px;
 }
 
+
+.hitter.hit-button-red{
+	background-position-x: -56px;
+	background-position-y: 0px;
+}
+
+.hitter.hit-button-red.hit{
+	background-position-x: -56px;
+	background-position-y: -34px;
+}
+
+.hitter.hit-button-red.hitted{
+	background-position-x: -56px;
+	background-position-y: -68px;
+}
+
+.hitter.hit-button-yellow{
+	background-position-x: -112px;
+	background-position-y: 0px;
+}
+
+.hitter.hit-button-yellow.hit{
+	background-position-x: -112px;
+	background-position-y: -34px;
+}
+
+.hitter.hit-button-yellow.hitted{
+	background-position-x: -112px;
+	background-position-y: -68px;
+}
+
+.hitter.hit-button-blue{
+	background-position-x: -167px;
+	background-position-y: 0px;
+}
+
+.hitter.hit-button-blue.hit{
+	background-position-x: -167px;
+	background-position-y: -34px;
+}
+
+.hitter.hit-button-blue.hitted{
+	background-position-x: -167px;
+	background-position-y: -68px;
+}
+
+.hitter.hit-button-orange{
+	background-position-x: -224px;
+	background-position-y: 0px;
+}
+
+.hitter.hit-button-orange.hit{
+	background-position-x: -224px;
+	background-position-y: -34px;
+}
+
+.hitter.hit-button-orange.hitted{
+	background-position-x: -224px;
+	background-position-y: -68px;
+}
+
+
+
+.notas{
+	position: absolute;
+	z-index:2;
+}
+
+.nota{
+	position: absolute;
+	background-image: url('../sources/notes.png');
+	width: 41px;
+	height: 21px;
+}
+
+
+.n-green{
+    background-position-x: 0px;
+    background-position-y: -11px;
+    background-size: 213px;
+	top: 112px;
+    left: 258px;
+}
+
+
+.n-green.animated{
+	animation-name: ngreen;
+	animation-duration: var(--base-game-tempo-song);
+	animation-timing-function: linear;
+}
+
+.n-red{
+	background-position-x: -42px;
+    background-position-y: -11px;
+    background-size: 213px;
+	top: 112px;
+    left: 300px;
+}
+
+.n-red.animated{
+	animation-name: nred;
+	animation-duration: var(--base-game-tempo-song);
+	animation-timing-function: linear;
+}
+
+.n-yellow{
+	background-position-x: -87px;
+    background-position-y: -11px;
+    background-size: 213px;
+	top: 112px;
+    left: 342px;
+}
+
+.n-yellow.animated{
+	animation-name: nyellow;
+	animation-duration: var(--base-game-tempo-song);
+	animation-timing-function: linear;
+}
+
+.n-blue{
+	background-position-x: -130px;
+    background-position-y: -11px;
+    background-size: 213px;
+	top: 112px;
+    left: 384px;
+}
+
+.n-blue.animated{
+	animation-name: nblue;
+	animation-duration: var(--base-game-tempo-song);
+	animation-timing-function: linear;
+}
+
+.n-orange{
+	background-position-x: -174px;
+    background-position-y: -11px;
+    background-size: 213px;
+	top: 112px;
+    left: 426px;
+}
+
+.n-orange.animated{
+	animation-name: norange;
+	animation-duration: var(--base-game-tempo-song);
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+
+.flare_efects{
+    position: absolute;
+    width: 128px;
+    height: 256px;
+    background-image: url('../sources/hitflamesanimation2.png');
+    z-index:3;
+}
+
+.flare_efects.fgreen{
+    top:255px;
+    left: -114px;
+}
+
+.flare_efects.fred{
+    top:255px;
+    left: -9px;
+}
+
+.flare_efects.fyellow{
+    top:255px;
+    left: 97px;
+}
+
+.flare_efects.fblue{
+    top:255px;
+    left: 200px;
+}
+
+.flare_efects.forange{
+    top:255px;
+    left: 305px;
+}
+
+.flare_efects.animated{
+    animation-name: flamehit;
+    animation-duration: .2s;
+    animation-timing-function: step-start;
+    animation-iteration-count: infinite;
+}
+@keyframes ngreen {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: scale(1) translate(-151px,350px); 
+        width: calc(var(--base-game-mastil) / 5);
+        background-size: 420px;
+        height: 45px;
+    }
+}
+
+@keyframes nred {
+    0%{
+
+        transform: translateY(0);
+    }
+    100%{
+        transform: scale(1) translate(-89px,350px); 
+        width: calc(var(--base-game-mastil) / 5);
+        background-size: 420px;
+        background-position-x: -85px;
+        height: 45px;
+    }
+}
+
+
+@keyframes nyellow {
+    0%{
+
+        transform: translateY(0);
+    }
+    100%{
+        transform: scale(1) translate(-15px,350px); 
+        width: calc(var(--base-game-mastil) / 5);
+        background-size: 420px;
+        background-position-x: -174px;
+        height: 45px;
+    }
+}
+
+@keyframes nblue {
+    0%{
+
+        transform: translateY(0);
+    }
+    100%{
+        transform: scale(1) translate(47px,350px); 
+        width: calc(var(--base-game-mastil) / 5);
+        background-size: 420px;
+        background-position-x: -253px;
+        height: 45px;
+    }
+}
+
+@keyframes norange {
+    0%{
+
+        transform: translateY(0);
+    }
+    100%{
+        transform: scale(1) translate(133px,422px); 
+        width: calc(var(--base-game-mastil) / 5);
+        background-size: 420px;
+        background-position-x: -338px;
+        height: 49px;
+    }
+}
+
+
+@keyframes neck {
+    0%{
+        background-position-y: 0px;
+    }
+    100%{
+        background-position-y: 505px;
+    }
+}
+
+@keyframes flamehit{
+    0%{
+        background-position-x: 128px;
+    }
+    7%{
+        background-position-x: -128px;
+    }
+    14%{
+        background-position-x: -256px;
+    }
+    21%{
+        background-position-x: -384px;
+    }
+    28%{
+        background-position-x: -512px;
+    }
+    35%{
+        background-position-x: -640px;
+    }
+    42%{
+        background-position-x: -768px;
+    }
+    49%{
+        background-position-x: -896px;
+    }
+    56%{
+        background-position-x: -1024px;
+    }
+    63%{
+        background-position-x: -1152px;
+    }
+    70%{
+        background-position-x: -1280px;
+    }
+    77%{
+        background-position-x: -1408px;
+    }
+    84%{
+        background-position-x: -1536px;
+    }
+    91%{
+        background-position-x: -1664px;
+    }
+    100%{
+        background-position-x: -1664px;
+    }
+}
+
+:root{
+    --base-game-mastil: 390px;
+    --base-game-mastil-notes: calc(var(--base-game-mastil) / 5) ;
+    --base-game-tempo-song: 3s;
+}
+
+#imagenContainer {
+    width: 200px;
+    height: 210px; 
+    position: absolute;
+    top: 1%;
+}
+
+.start-button {
+    position: absolute;
+    top: 96%;
+    left: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #1f1f1f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 9999;
+}
 
